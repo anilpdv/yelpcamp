@@ -72,7 +72,7 @@ var port = process.env.PORT || 3000;
 var ip = process.env.IP || "127.0.0.1";
 // listen to port:3000
 app.listen(port, ip, function() {
-  console.log("app is starting and runnign on port ${port}");
+  console.log("app is starting and runnign on port ", port);
   // setTimeout(function(){
   //     console.log("[ yelpcamp ] app is starting..");
   // },1000)
