@@ -1,0 +1,16 @@
+<% include ./partials/header %>
+    <div class="container bg-light mt-5 rounded p-5 w-50">
+        <form action="/login" method="POST">
+            <div class="form-group">
+                <label for="forminput1">Email Address</label>
+                <input type="email" name="email" class="form-control" id="forminput1" >
+            </div>
+            <div class="form-group">
+                <label for="forinput2">Password</label>
+                <input type="password" name="password" class="form-control" id="forminput2">
+            </div>
+            <button type="submit" class="btn btn-primary">submit</button>
+        </form>
+    </div>
+<% include ./partials/footer %>
+

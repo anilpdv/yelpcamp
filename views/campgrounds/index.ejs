@@ -1,0 +1,45 @@
+<% include ../partials/header %>
+
+<!-- container boostrap class -->
+<div class="container">
+
+	<!-- jumbotron boostrap class-->
+	<header class="jumbotron">
+
+		<!-- another container to make jumbotron to justify-->
+		<div class="container">
+			<h1>welcome to yelpcamp!</h1>
+			<p>See all campgrounds around the world!</p>
+			<p>
+			<a class="btn btn-primary btn-sl" href="/campgrounds/new" >Add new Campground!</a>
+		   </p>
+		</div>
+
+	</header>
+
+	<!-- grid class 'row' boostrap -->
+	<div class="row text-center">
+
+		<!-- loopint through the images -->
+		<% data.forEach(function(campground){ %>
+
+			<!-- setting col medium to 3 units and col small 6 units-->
+		    <div class='col-md-4 col-sm-6'>
+
+		    	<!--adding thumbnail class to the image-->
+			    	<div class="thumbnail">
+			       		 <img src="<%=campground.image%>">
+			       		 <div class="caption">
+		    		<h4><%= campground.name %></h4>
+		    			</div>
+		    			<a href="/campgrounds/<%= campground._id%>" class="btn btn-info">more info!</a>
+			    	</div>
+		    </div>
+		<% }); %>
+
+	</div>
+
+</div>
+
+
+<% include ../partials/footer %>
