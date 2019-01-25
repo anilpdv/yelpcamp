@@ -8,9 +8,10 @@ var seedDB = require("./seed");
 // creating a app instance
 var app = express();
 
+// "mongodb://localhost/yelp_camp"
 //connecting to the database
 mongoose.connect(
-  "mongodb://localhost/yelp_camp",
+  "mongodb://"fofo":"ilovepython100%"@ds121945.mlab.com:21945/fofotomoruzza",
   {
     useNewUrlParser: true
   }
