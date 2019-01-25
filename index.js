@@ -11,7 +11,7 @@ var app = express();
 // "mongodb://localhost/yelp_camp"
 //connecting to the database
 mongoose.connect(
-  "mongodb://"fofo":"ilovepython100%"@ds121945.mlab.com:21945/fofotomoruzza",
+  "mongodb://'fofo':'ilovepython100%'@ds121945.mlab.com:21945/fofotomoruzza",
   {
     useNewUrlParser: true
   }
