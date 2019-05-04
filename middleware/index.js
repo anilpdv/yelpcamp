@@ -3,7 +3,7 @@ function loggedOut(req, res, next) {
     return res.redirect('/');
   }
   return next();
-};
+}
 
 function requiresLogin(req, res, next) {
   if (req.session && req.session.userId) {
@@ -13,7 +13,7 @@ function requiresLogin(req, res, next) {
     err.status = 401;
     return next(err);
   }
-};
+}
 
 module.exports.loggedOut = loggedOut;
 module.exports.requiresLogin = requiresLogin;         
